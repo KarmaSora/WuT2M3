@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>uppgift 1 +</title>
+</head>
+
+<body>
+    <header>
+        <h1>starting with uppgift 1</h1>
+    </header>
+    <main>
+        <h2>create an array of five names and display those names in a new tag created in js used directly in html</h2>
+
+        <section id="NamesDisplayArea">
+        </section>
+
+        <script>
+            let ArrayOfNames = ['jake', 'Karma', 'Robin', 'Casper', 'Ashe'];
+            console.log(ArrayOfNames);
+            let elementDispayArea = document.querySelector('#NamesDisplayArea');
+            for (i = 0; i < ArrayOfNames.length; i++) {
+                let newTag = document.createElement('p');
+                newTag.append(ArrayOfNames[i]);
+                NamesDisplayArea.appendChild(newTag);
+            }
+        </script>
+        <br><br>
+        <hr>
+        <br><br>
+        <h3>upp 5,  P tags the change backgorund color</h3>
+        <p>this is the first pTag here</p>
+        <p>this is the secound pTag here</p>
+        <p>this is the third pTag here</p>
+
+    
+
+
+    </main>
+
+</body>
+<script src="/js/arrayOfElements.js"></script>
+</html>
